@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تسجيل الدخول - Devs Area</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="profile">
+    <h1>مرحبا بك في منطقة المطورين</h1>
+    <p class="bio">يرجى تسجيل الدخول أو إنشاء حساب جديد للمتابعة</p>
+
+    <div id="login-form" class="section">
+      <h2><i class="fas fa-lock"></i> تسجيل الدخول</h2>
+      <div class="card">
+        <label>👤 اسم المستخدم:</label>
+        <input type="text" id="login-username" class="input" placeholder="ادخل اسم المستخدم">
+
+        <label>🔒 كلمة المرور:</label>
+        <input type="password" id="login-password" class="input" placeholder="ادخل كلمة المرور">
+
+        <button onclick="login()" class="link-item">تسجيل الدخول</button>
+      </div>
+      <p style="text-align: center; margin-top: 10px;">
+        لا تملك حساب؟ <a href="#" onclick="toggleForm()">إنشاء حساب جديد</a>
+      </p>
+    </div>
+
+    <div id="register-form" class="section" style="display: none;">
+      <h2><i class="fas fa-user-plus"></i> إنشاء حساب</h2>
+      <div class="card">
+        <label>👤 اسم المستخدم:</label>
+        <input type="text" id="reg-username" class="input" placeholder="اختر اسم مستخدم">
+
+        <label>🔒 كلمة المرور:</label>
+        <input type="password" id="reg-password" class="input" placeholder="كلمة المرور">
+
+        <label>🔒 تأكيد كلمة المرور:</label>
+        <input type="password" id="reg-confirm" class="input" placeholder="اعد كتابة كلمة المرور">
+
+        <label>
+          <input type="checkbox" id="reg-terms"> أوافق على شروط الاستخدام
+        </label>
+
+        <button onclick="register()" class="link-item">إنشاء الحساب</button>
+      </div>
+      <p style="text-align: center; margin-top: 10px;">
+        لديك حساب؟ <a href="#" onclick="toggleForm()">تسجيل الدخول</a>
+      </p>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Taeh Dev - جميع الحقوق محفوظة
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+          </html>
